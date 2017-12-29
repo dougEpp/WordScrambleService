@@ -439,6 +439,7 @@ namespace WordScrambleConsoleGame.WordScrambleServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleService/GuessWord", ReplyAction="http://tempuri.org/IWordScrambleService/GuessWordResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(WordScrambleConsoleGame.WordScrambleServiceReference.PlayerNotInGameFault), Action="http://tempuri.org/IWordScrambleService/GuessWordPlayerNotInGameFaultFault", Name="PlayerNotInGameFault", Namespace="http://schemas.datacontract.org/2004/07/WordScrambleService")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WordScrambleConsoleGame.WordScrambleServiceReference.GameNotHostedFault), Action="http://tempuri.org/IWordScrambleService/GuessWordGameNotHostedFaultFault", Name="GameNotHostedFault", Namespace="http://schemas.datacontract.org/2004/07/WordScrambleService")]
         bool GuessWord(string playerName, string guessedWord, string unscrambledWord);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleService/GuessWord", ReplyAction="http://tempuri.org/IWordScrambleService/GuessWordResponse")]

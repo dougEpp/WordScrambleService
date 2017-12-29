@@ -76,6 +76,12 @@ namespace WordScrambleService
         [OperationBehavior]
         public bool GuessWord(string playerName, string guessedWord, string unscrambledWord)
         {
+            if (!IsGameBeingHosted())
+            {
+                // Game has ended between user joining and making their guess
+                GameNotHostedFault fault = new GameNotHostedFault(playerName);
+                throw new FaultException<GameNotHostedFault>(fault);
+            }
             if (!activePlayers.Contains(playerName))
             {
                 // user is not playing the game

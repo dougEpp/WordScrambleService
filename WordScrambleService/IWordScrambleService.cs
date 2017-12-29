@@ -40,6 +40,7 @@ namespace WordScrambleService
         // Returns false if no match
         // Exception: user is not playing the game
         [FaultContract(typeof(PlayerNotInGameFault))]
+        [FaultContract(typeof(GameNotHostedFault))]
         [OperationContract]
         bool GuessWord(string playerName, string guessedWord, string unscrambledWord);
 

@@ -46,6 +46,9 @@
   <wsdl:message name="IWordScrambleService_GuessWord_PlayerNotInGameFaultFault_FaultMessage">
     <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/WordScrambleService" name="detail" element="q5:PlayerNotInGameFault" />
   </wsdl:message>
+  <wsdl:message name="IWordScrambleService_GuessWord_GameNotHostedFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/WordScrambleService" name="detail" element="q6:GameNotHostedFault" />
+  </wsdl:message>
   <wsdl:message name="IWordScrambleService_LogOut_InputMessage">
     <wsdl:part name="parameters" element="tns:LogOut" />
   </wsdl:message>
@@ -79,6 +82,7 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IWordScrambleService/GuessWord" message="tns:IWordScrambleService_GuessWord_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWordScrambleService/GuessWordResponse" message="tns:IWordScrambleService_GuessWord_OutputMessage" />
       <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleService/GuessWordPlayerNotInGameFaultFault" name="PlayerNotInGameFaultFault" message="tns:IWordScrambleService_GuessWord_PlayerNotInGameFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordScrambleService/GuessWordGameNotHostedFaultFault" name="GameNotHostedFaultFault" message="tns:IWordScrambleService_GuessWord_GameNotHostedFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="LogOut">
       <wsdl:input wsaw:Action="http://tempuri.org/IWordScrambleService/LogOut" message="tns:IWordScrambleService_LogOut_InputMessage" />
@@ -140,6 +144,9 @@
       </wsdl:output>
       <wsdl:fault name="PlayerNotInGameFaultFault">
         <soap:fault use="literal" name="PlayerNotInGameFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="GameNotHostedFaultFault">
+        <soap:fault use="literal" name="GameNotHostedFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="LogOut">
