@@ -106,5 +106,17 @@ namespace WordScrambleService
             }
             return new string(chars);
         }
+
+        public void LogOut(string playerName)
+        {
+            activePlayers.Remove(playerName);
+        }
+
+        public void EndGame(string playerName)
+        {
+            gameWords = null;
+            hostUser = null;
+            activePlayers.Clear();
+        }
     }
 }

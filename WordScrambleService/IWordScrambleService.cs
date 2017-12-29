@@ -42,6 +42,11 @@ namespace WordScrambleService
         [FaultContract(typeof(PlayerNotInGameFault))]
         [OperationContract]
         bool GuessWord(string playerName, string guessedWord, string unscrambledWord);
+
+        [OperationContract]
+        void LogOut(string playerName);
+        [OperationContract]
+        void EndGame(string playerName);
     }
 
     [DataContract]
@@ -104,7 +109,7 @@ namespace WordScrambleService
         public GameNotHostedFault(string userName)
         {
             UserName = userName;
-            Reason = "TThis game is not yet being hosted.";
+            Reason = "This game is not yet being hosted.";
         }
     }
     [DataContract]

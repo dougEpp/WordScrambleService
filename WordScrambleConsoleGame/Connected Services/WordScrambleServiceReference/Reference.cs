@@ -443,6 +443,18 @@ namespace WordScrambleConsoleGame.WordScrambleServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleService/GuessWord", ReplyAction="http://tempuri.org/IWordScrambleService/GuessWordResponse")]
         System.Threading.Tasks.Task<bool> GuessWordAsync(string playerName, string guessedWord, string unscrambledWord);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleService/LogOut", ReplyAction="http://tempuri.org/IWordScrambleService/LogOutResponse")]
+        void LogOut(string playerName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleService/LogOut", ReplyAction="http://tempuri.org/IWordScrambleService/LogOutResponse")]
+        System.Threading.Tasks.Task LogOutAsync(string playerName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleService/EndGame", ReplyAction="http://tempuri.org/IWordScrambleService/EndGameResponse")]
+        void EndGame(string playerName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWordScrambleService/EndGame", ReplyAction="http://tempuri.org/IWordScrambleService/EndGameResponse")]
+        System.Threading.Tasks.Task EndGameAsync(string playerName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -502,6 +514,22 @@ namespace WordScrambleConsoleGame.WordScrambleServiceReference {
         
         public System.Threading.Tasks.Task<bool> GuessWordAsync(string playerName, string guessedWord, string unscrambledWord) {
             return base.Channel.GuessWordAsync(playerName, guessedWord, unscrambledWord);
+        }
+        
+        public void LogOut(string playerName) {
+            base.Channel.LogOut(playerName);
+        }
+        
+        public System.Threading.Tasks.Task LogOutAsync(string playerName) {
+            return base.Channel.LogOutAsync(playerName);
+        }
+        
+        public void EndGame(string playerName) {
+            base.Channel.EndGame(playerName);
+        }
+        
+        public System.Threading.Tasks.Task EndGameAsync(string playerName) {
+            return base.Channel.EndGameAsync(playerName);
         }
     }
 }

@@ -46,6 +46,7 @@ namespace WordScrambleConsoleGame
                         Console.WriteLine(e.Detail.Reason);
                     }
                     Console.ReadKey();
+                    proxy.EndGame(playerName);
                 }
             }
             if (canPlayGame)
@@ -90,6 +91,7 @@ namespace WordScrambleConsoleGame
                             {
                                 Console.Clear();
                                 Console.WriteLine("You won!");
+                                //proxy.EndGame(playerName);
                             }
                         }
                     }
@@ -111,6 +113,7 @@ namespace WordScrambleConsoleGame
 
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
+                    //proxy.LogOut(playerName);
                 }
                 proxy.Close();
             }
