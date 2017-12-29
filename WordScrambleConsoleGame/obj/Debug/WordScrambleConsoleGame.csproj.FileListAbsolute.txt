@@ -1,0 +1,7 @@
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleConsoleGame\bin\Debug\WordScrambleConsoleGame.exe.config
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleConsoleGame\bin\Debug\WordScrambleConsoleGame.exe
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleConsoleGame\bin\Debug\WordScrambleConsoleGame.pdb
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleConsoleGame\obj\Debug\WordScrambleConsoleGame.csproj.CoreCompileInputs.cache
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleConsoleGame\obj\Debug\WordScrambleConsoleGame.exe
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleConsoleGame\obj\Debug\WordScrambleConsoleGame.pdb
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleConsoleGame\obj\Debug\WordScrambleConsoleGame.csprojResolveAssemblyReference.cache

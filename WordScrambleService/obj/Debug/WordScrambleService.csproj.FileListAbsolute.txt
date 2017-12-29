@@ -1,0 +1,6 @@
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleService\bin\WordScrambleService.dll.config
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleService\bin\WordScrambleService.dll
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleService\bin\WordScrambleService.pdb
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleService\obj\Debug\WordScrambleService.csproj.CoreCompileInputs.cache
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleService\obj\Debug\WordScrambleService.dll
+C:\Users\Doug\Documents\Conestoga\WordScrambleService\WordScrambleService\obj\Debug\WordScrambleService.pdb

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordScrambleService", "WordScrambleService\WordScrambleService.csproj", "{94395C9D-A49E-4D57-9B5C-E61AB667B95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordScrambleConsoleGame", "WordScrambleConsoleGame\WordScrambleConsoleGame.csproj", "{61A6A421-2F78-416E-88EF-86ECD1B8B5B1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{94395C9D-A49E-4D57-9B5C-E61AB667B95B} = {94395C9D-A49E-4D57-9B5C-E61AB667B95B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94395C9D-A49E-4D57-9B5C-E61AB667B95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94395C9D-A49E-4D57-9B5C-E61AB667B95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94395C9D-A49E-4D57-9B5C-E61AB667B95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94395C9D-A49E-4D57-9B5C-E61AB667B95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A6A421-2F78-416E-88EF-86ECD1B8B5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A6A421-2F78-416E-88EF-86ECD1B8B5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A6A421-2F78-416E-88EF-86ECD1B8B5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A6A421-2F78-416E-88EF-86ECD1B8B5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F060AEB7-DBA7-487F-B7C9-3BC3EE67845D}
+	EndGlobalSection
+EndGlobal
